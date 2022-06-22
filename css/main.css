@@ -74,9 +74,10 @@ h2 {
   margin-top: 2.4rem !important;
 }
 
+.col-lg-8
 .col-lg-6,
 .col-lg-4,
-.col-lg-3,
+.col-lg-3, .col-lg-2
 .col-2 {
   padding: 0 1.5rem;
 }
@@ -1045,5 +1046,20 @@ h2 {
   color: #009f4d;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.project .row .col-lg-8 .item {
+  padding: 0 5rem;
+}
+
+.project .row .col-lg-4 {
+  padding-left: 7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.project .row .col-lg-4 .btn {
+  padding: 1.5rem 5rem;
 }
 /*# sourceMappingURL=main.css.map */

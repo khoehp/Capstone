@@ -277,3 +277,21 @@
     }
   }
 }
+
+// PROJECT
+.project{
+  .row{
+    .col-lg-8{
+      .item{
+        padding: 0 5rem;
+      }
+    }
+    .col-lg-4{
+      padding-left: 7rem;
+      align-self: center;
+      .btn{
+        padding: 1.5rem 5rem;
+      }
+    }
+  }
+}
