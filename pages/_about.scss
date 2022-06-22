@@ -1,0 +1,279 @@
+.carousel {
+  background-image: url(../img/b1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  min-height: calc(100vh - 4rem);
+
+  .heading {
+    text-align: center;
+    p {
+      font-size: 2rem;
+      color: $cWhite;
+    }
+  }
+  .carousel-overlay {
+    background: rgba(29, 42, 55, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+// ABOUT
+.company {
+  .row {
+    .item {
+      position: relative;
+      z-index: 1;
+      img {
+        max-width: 100%;
+        -webkit-border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        -webkit-box-shadow: 0 1.5rem 3.8rem 0 rgba(0, 0, 0, 0.2);
+      }
+      .bg-shape {
+        border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
+        -webkit-box-shadow: 0 1.5rem 3.8rem 0 rgba(0, 0, 0, 0.2);
+        width: 50rem;
+        height: 50rem;
+        background-color: $c2-100;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+      }
+      .imginfo {
+        position: absolute;
+        right: 6.5rem;
+        bottom: 0;
+        color: $cWhite;
+        box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.2);
+        min-width: 20rem;
+        min-height: 20rem;
+        border-radius: 0.8rem;
+        transform: rotate(45deg);
+        // text-align: center;
+        background-color: $c2-100;
+        .imginfo-title {
+          transform: rotate(-45deg);
+          h6 {
+            font-size: 4rem;
+            line-height: 4rem;
+            color: $cWhite;
+            font-weight: $fw-semibold;
+            padding: 3rem 0 1rem 5rem;
+          }
+          p {
+            color: $cWhite;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            // padding-left: 3rem;
+            text-align: center;
+            padding-right: 3rem;
+          }
+        }
+      }
+    }
+    .heading {
+      h4 {
+        margin: 2.4rem 0;
+        font-size: 2.4rem;
+        color: $c1-500;
+        font-weight: $fw-regular;
+      }
+    }
+    .about__feature {
+      margin-top: 10rem;
+      .item {
+        position: relative;
+        padding: 5rem 3.5rem;
+        z-index: 1;
+        border-radius: 0.8rem;
+        background-color: $c3-100;
+        display: flex;
+        i {
+          display: inline-block;
+          font-size: 3.8rem;
+          width: 4rem;
+          color: $c2-100;
+        }
+        .item-content {
+          padding-left: 2rem;
+          h4 {
+            &:hover {
+              cursor: pointer;
+              color: $c2-100;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// WEBDESIGN
+.webdesign {
+  background-color: $c3-100;
+  .row {
+    .bottom {
+      margin-top: 4rem;
+      span {
+        font-size: 3.5rem;
+        color: $c2-100;
+        display: block;
+        margin-bottom: 1.5rem;
+      }
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+    .col-lg-3 {
+      .item {
+        img {
+          width: 100%;
+          border-radius: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// PROFESSIONALS
+.professionals {
+  .heading {
+    text-align: center;
+  }
+  .row {
+    .item {
+      position: relative;
+      overflow: hidden;
+      .item__img {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+          background: $c1-400;
+          transition: all 0.2s ease-in-out;
+          overflow: hidden;
+          border-radius: 0.8rem;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(20, 20, 20, 0.7);
+          opacity: 0;
+          border-radius: 0.8rem;
+          transition: all 0.2s ease-in-out;
+          .team-title {
+            position: absolute;
+            top: 55%;
+            left: 0;
+            text-align: center;
+            padding: 0 10%;
+            width: 100%;
+            overflow: hidden;
+            z-index: 2;
+            transition: all 0.2s ease-in-out;
+            p {
+              color: $cWhite;
+              font-size: 2rem;
+            }
+            .icon {
+              margin-top: 2rem;
+              padding: 0 3rem;
+              display: flex;
+              justify-content: space-between;
+              i {
+                color: $cWhite;
+                font-size: 1.4rem;
+                width: 3.7rem;
+                height: 3.7rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 3.7rem;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                  color: $cWhite;
+                  background-color: rgba(225, 225, 225, 0.3);
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        &:hover .overlay {
+          opacity: 1;
+        }
+        &:hover .team-title {
+          opacity: 1;
+          margin-top: -7rem;
+        }
+      }
+      .content {
+        text-align: center;
+        margin-top: 2rem;
+        &:hover h4 {
+          cursor: pointer;
+          color: $c2-100;
+        }
+      }
+    }
+  }
+}
+
+// PLAN
+.plan {
+  background-color: $c3-100;
+  .heading {
+    text-align: center;
+  }
+  .row {
+    padding: 2rem 0;
+    justify-content: center;
+    .col-2 {
+        justify-content: center;
+      .content {
+        font-size: 3rem;
+        text-align: center;
+        span {
+          display: block;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 0.8rem;
+          line-height: 8rem;
+          border: 0.0625rem solid;
+        }
+        .item1 {
+          color: $c2-100;
+        }
+        .item2 {
+          color: #ff4c4c;
+        }
+        .item3 {
+          color: #213364;
+        }
+        .item4 {
+          color: #f48924;
+        }
+      }
+    }
+    .col-10 {
+      padding-left: 5rem;
+      h4 {
+        font-size: 2.4rem;
+       margin-bottom: 1rem;
+        &:hover {
+          cursor: pointer;
+          color: $c2-100;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

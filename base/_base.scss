@@ -1,0 +1,40 @@
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem !important;
+}
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  color: $c1-200;
+  opacity: 0.8;
+}
+h4{
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: $fw-semibold;
+  color: $c1-500;
+}
+h2{
+  color: $cWhite;
+  font-size: 5rem;
+  font-weight: $fw-semibold;
+  text-align: center;
+  
+}
