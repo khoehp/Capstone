@@ -45,6 +45,14 @@
         position: absolute;
         top: 0;
         z-index: -1;
+        @include mobile-sm {
+          width: 39rem;
+          height: 39rem;
+        }
+        @include mobile-xs {
+          width: 35rem;
+          height: 35rem;
+        }
       }
       .imginfo {
         position: absolute;
@@ -66,6 +74,10 @@
             color: $cWhite;
             font-weight: $fw-semibold;
             padding: 3rem 0 1rem 5rem;
+            @include mobile-sm {
+              font-size: 3rem;
+              line-height: 3.5rem;
+            }
           }
           p {
             color: $cWhite;
@@ -74,16 +86,30 @@
             // padding-left: 3rem;
             text-align: center;
             padding-right: 3rem;
+            @include mobile-sm {
+              font-size: 2rem;
+              line-height: 2rem;
+            }
           }
+        }
+        @include tablet-md {
+          right: 15.5rem;
+        }
+        @include mobile-sm {
+          min-width: 10rem;
+          min-height: 10rem;
+          padding: -6rem;
+          right: 6rem;
         }
       }
     }
     .heading {
       h4 {
         margin: 2.4rem 0;
-        font-size: 2.4rem;
-        color: $c1-500;
-        font-weight: $fw-regular;
+      }
+      @include tablet-md {
+        margin-top: 4rem;
+        padding: 0 3rem;
       }
     }
     .about__feature {
@@ -109,6 +135,9 @@
               color: $c2-100;
             }
           }
+        }
+        @include tablet-md {
+          margin-top: 3rem;
         }
       }
     }
@@ -137,7 +166,13 @@
           width: 100%;
           border-radius: 0.8rem;
         }
+        @include tablet-md {
+          margin-top: 3rem;
+        }
       }
+    }
+    @include tablet-md {
+      padding: 0 1.5rem;
     }
   }
 }
@@ -237,7 +272,7 @@
     padding: 2rem 0;
     justify-content: center;
     .col-2 {
-        justify-content: center;
+      justify-content: center;
       .content {
         font-size: 3rem;
         text-align: center;
@@ -267,7 +302,7 @@
       padding-left: 5rem;
       h4 {
         font-size: 2.4rem;
-       margin-bottom: 1rem;
+        margin-bottom: 1rem;
         &:hover {
           cursor: pointer;
           color: $c2-100;
@@ -279,18 +314,24 @@
 }
 
 // PROJECT
-.project{
-  .row{
-    .col-lg-8{
-      .item{
+.project {
+  .row {
+    .col-lg-8 {
+      .item {
         padding: 0 5rem;
+        @include mobile-sm {
+          padding: 0;
+        }
       }
     }
-    .col-lg-4{
+    .col-lg-4 {
       padding-left: 7rem;
       align-self: center;
-      .btn{
+      .btn {
         padding: 1.5rem 5rem;
+      }
+      @include mobile-sm{
+        padding: 1.5rem 0;
       }
     }
   }
