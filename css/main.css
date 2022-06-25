@@ -59,6 +59,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 2.2rem;
+  color: #3f3a64;
+  font-weight: 600;
+}
+
 @media (max-width: 992px) {
   h3 {
     font-size: 3.2rem !important;
@@ -119,6 +125,13 @@ h5 {
   color: #3f3a64;
 }
 
+.title-header {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3f3a64;
+  margin-bottom: 1rem;
+}
+
 .ps {
   padding: 10rem 0;
 }
@@ -140,7 +153,7 @@ h5 {
 }
 
 .btn {
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 5rem;
   font-size: 1.6rem;
   line-height: 1.8rem;
   font-weight: 600;
@@ -219,13 +232,35 @@ h5 {
   padding-right: 4.8rem;
 }
 
+@media (max-width: 992px) {
+  .features .row .features__left .item h3 {
+    font-size: 3.2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .features .row .features__left .item h3 {
+    font-size: 3rem !important;
+  }
+}
+
 .features .row .features__left .item .btn {
   margin-top: 5rem;
   padding: 1.5rem 5rem;
 }
 
+@media (max-width: 576px) {
+  .features .row .features__left .item {
+    padding: 0;
+  }
+}
+
+.features .row .features__right {
+  padding-top: 5rem;
+}
+
 .features .row .features__right .col-lg-6 {
-  padding: 0 1.5rem 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .features .row .features__right .item {
@@ -266,7 +301,7 @@ h5 {
 }
 
 .service .content .col-lg-4 {
-  padding: 0 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .service .content .col-lg-4 .item img {
@@ -653,6 +688,12 @@ h5 {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  .testimonials .heading {
+    margin-bottom: 5rem;
+  }
+}
+
 .testimonials .test {
   padding: 6rem 18rem 0 18rem;
 }
@@ -693,6 +734,18 @@ h5 {
   font-size: 2rem;
   font-weight: 600;
   color: #3f3a64;
+}
+
+@media (max-width: 992px) {
+  .testimonials .test {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials .test {
+    padding: 0;
+  }
 }
 
 .blog .heading {
@@ -1204,5 +1257,244 @@ h5 {
 .sv-feature .heading {
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.sv-feature .row .col-lg-6 {
+  padding: 1.5rem;
+}
+
+.sv-feature .row .col-lg-6 .item-left {
+  height: 100%;
+  padding: 4.5rem 5rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.sv-feature .row .col-lg-6 .item-left img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.6rem;
+}
+
+.sv-feature .row .col-lg-6 .item-left h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  margin-bottom: 2.2rem;
+}
+
+.sv-feature .row .col-lg-6 .item-left .btn {
+  margin-top: 1rem;
+  padding: 1.5rem 5rem;
+}
+
+@media (max-width: 992px) {
+  .sv-feature .row .col-lg-6 .item-left .btn {
+    padding: 1.5rem 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sv-feature .row .col-lg-6 .item-left {
+    padding: 4.5rem 1rem;
+  }
+}
+
+.sv-feature .row .col-lg-6 .item-right img {
+  width: 100%;
+}
+
+.sv-service .heading {
+  text-align: center;
+}
+
+.sv-service .row .col-12 {
+  padding: 1.5rem;
+}
+
+.sv-service .row .col-12 .item {
+  position: relative;
+  background-color: #f7f7f7;
+  border-radius: 0.8rem;
+  padding: 5rem 3rem;
+}
+
+.sv-service .row .col-12 .item .col-2 .icon {
+  font-size: 3.8rem;
+  width: 4rem;
+  color: #009f4d;
+}
+
+.sv-service .row .col-12 .item .col-10 {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .sv-service .row .col-12 .item .col-10 .title-header {
+    font-size: 2.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sv-service .row .col-12 .item .col-10 .title-header {
+    font-size: 1.8rem !important;
+  }
+}
+
+.sv-quote {
+  position: relative;
+  background: url(../img/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sv-quote .row .col-left {
+  padding-right: 5rem;
+}
+
+.sv-quote .row .col-left .title .quote-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 0.1rem solid #aaa;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sv-quote .row .col-left .title .quote-info .appy-sub-icon {
+  width: 15%;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .sv-quote .row .col-left .title .quote-info .appy-sub-icon {
+    font-size: 3rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.sv-quote .row .col-left .title .quote-info .appy-sub-info h5 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sv-quote .row .col-left .title .quote-info .appy-sub-info p {
+  color: #eee;
+  font-size: 1.8rem;
+}
+
+.sv-quote .row .col-left .title .qoute-info1 {
+  border-bottom: none;
+}
+
+@media (max-width: 992px) {
+  .sv-quote .row .col-left {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sv-quote .row .col-left {
+    padding: 0;
+  }
+}
+
+.sv-quote .row .col-right {
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  padding: 6rem;
+}
+
+.sv-quote .row .col-right h3 {
+  font-size: 2.8rem;
+}
+
+.sv-quote .row .col-right .form-control {
+  margin-bottom: 2rem;
+  background: #f7f7f7;
+  width: 100%;
+  border: none;
+  height: 6rem;
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1.2rem 2.5rem;
+}
+
+.sv-quote .row .col-right textarea {
+  height: 10rem !important;
+}
+
+@media (max-width: 768px) {
+  .sv-quote .row .col-right {
+    padding: 2rem 1rem;
+  }
+}
+
+.sv-quote::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  min-height: 100%;
+  background: rgba(29, 42, 55, 0.7);
+}
+
+.sv-project {
+  background-color: #f7f7f7;
+}
+
+.sv-project .heading {
+  text-align: center;
+}
+
+.sv-project .row {
+  margin-top: 5rem;
+}
+
+.sv-project .row .col-12 {
+  padding: 1.5rem;
+}
+
+.sv-project .row .col-12 .item {
+  background-color: #ffffff;
+  padding: 4rem 3rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: rgba(1, 1, 1, 0.05) 0.1rem 0.1rem 0.5rem 0;
+          box-shadow: rgba(1, 1, 1, 0.05) 0.1rem 0.1rem 0.5rem 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sv-project .row .col-12 .item .icon img {
+  max-width: 6.5rem;
+}
+
+.sv-project .row .col-12 .item h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.sv-project .row .col-12 .item h3:hover {
+  cursor: pointer;
+  color: #009f4d;
+}
+
+.sv-project .row .col-12 .item:hover {
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-box-shadow: rgba(46, 41, 51, 0.08) 0 0.2rem 0.4rem, rgba(71, 63, 79, 0.16) 0 0.5rem 1rem;
+          box-shadow: rgba(46, 41, 51, 0.08) 0 0.2rem 0.4rem, rgba(71, 63, 79, 0.16) 0 0.5rem 1rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 /*# sourceMappingURL=main.css.map */
