@@ -84,14 +84,14 @@
                 <!-- Navbar links -->
                 <div class="navbar__content collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="home.html">Home</a>
+                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link active" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="serivce.html">Services</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Pages
@@ -132,8 +132,8 @@
                             <div class="theme-switch-wrapper d-flex align-items-center">
                                 <label for="checkbox" class="theme-switch">
                                     <input id="checkbox" type="checkbox" />
-                                    <div id="mode-switch" class="mode mode-switch">
-                                        <i class="fa fa-moon"></i>
+                                    <div id="toggle mode-switch" class="mode mode-switch">
+                                        <i class="icon-theme fa fa-moon" id="icon-theme"></i>
                                         <i class="fa fa-sun d-none"></i>
                                     </div>
                                 </label>
@@ -604,6 +604,18 @@
     <!-- Owl Carousel -->
     <!-- jquery.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky');
+                } else {
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
     <!-- Video -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
@@ -651,6 +663,16 @@
 
     <!-- JS link  -->
     <script src="./js/index.js"></script>
+
+    <script>
+        const toggle= document.getElementById("icon-theme");
+        const company = document.querySelector("company")
+
+        icon.onclick = function (){
+           toggle.classList.toggle('active');
+           company.classList.toggle("dark-theme")
+        }
+    </script>
 
 </body>
 

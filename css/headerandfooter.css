@@ -9,8 +9,8 @@ a {
   font-size: 18px;
   opacity: 0.8;
 }
-a:hover{
-	color: #fff !important;
+a:hover {
+  color: #fff !important;
 }
 
 :root {
@@ -126,6 +126,13 @@ a:hover{
   margin: 0;
   padding: 0;
 }
+.sticky {
+  background: var(--bg-color);
+  height: 80px;
+  border-bottom: none;
+  padding: 0;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
 
 .navbar .navbar-brand {
   position: relative;
@@ -188,8 +195,20 @@ a:hover{
 .navbar__content .search__container .btn-material i {
   color: var(--white-color);
   transition: opacity 0.3s ease-in-out;
+  font-size: 15px;
+}
+.sticky .navbar .navbar-brand {
+  color: var(--heading-color) !important;
 }
 
+.sticky .navbar-nav .nav-link {
+  color: var(--heading-color) !important;
+  opacity: 0.7;
+}
+.sticky .navbar-nav .active .nav-link {
+  color: var(--primary-color) !important;
+  opacity: 0.9;
+}
 /* submenu dropdown */
 .dropdown-toggle::after {
   content: none;
@@ -308,6 +327,7 @@ body.search-active .header__search .search__container .btn-material i {
   height: 24px;
   padding: 1px 0;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .navbar__content .DarkAndLight .mode i {

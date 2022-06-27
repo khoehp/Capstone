@@ -94,14 +94,14 @@
           id="collapsibleNavbar"
         >
           <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link  active" href="serivce.html">Services</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -169,9 +169,17 @@
   </header>
 
         <!--CAROUSEL  -->
-    <div class="carousel">
-
+    <section class="carousel ps">
+      <div class="img">
+        <div class="container">
+            <div class="heading">
+                <h2>Service</h2>
+                <p>We work with bold brands that we believe in</p>
+            </div>
+            <div class="carousel-overlay"></div>
+        </div>
     </div>
+    </section>
     <!--SERVICE FREATURE  -->
     <section class="sv-feature ps">
         <div class="container">
@@ -579,6 +587,17 @@
     <!-- Owl Carousel -->
     <!-- jquery.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+          $(window).scroll(function(){
+              if($(this).scrollTop()){
+                  $('header').addClass('sticky');
+              } else {
+                  $('header').removeClass('sticky');
+              }
+          });
+      });
+  </script>
     <!-- Owl Carousel.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
