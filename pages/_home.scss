@@ -144,7 +144,8 @@
           box-shadow: rgba(1, 1, 1, 0.1) 0.0625rem 0.0625rem 0.3125rem 0;
           transform: translateY(-2.5rem);
           &:hover {
-            color: $c2-100;
+            cursor: pointer;
+            color: $c2-100 ;
           }
         }
         p {

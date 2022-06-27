@@ -366,6 +366,7 @@ h5 {
 }
 
 .service .content .col-lg-4 .info .info__content:hover {
+  cursor: pointer;
   color: #009f4d;
 }
 
