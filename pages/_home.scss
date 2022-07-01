@@ -1,5 +1,19 @@
+.carousel {
+  padding-top: 10rem;
+  .shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    path {
+      fill: $cWhite;
+    }
+  }
+}
+
 .about {
-  margin-top: 10rem;
+  // margin-top: 10rem;
   .row {
     .col-lg-6 {
       position: relative;
@@ -12,13 +26,17 @@
           margin-top: 2.4rem;
           padding-left: 0 !important;
           li {
-            a {
+            h4 {
               font-size: 1.8rem;
               display: block;
               margin-bottom: 1.5rem;
               line-height: 2.8rem;
               font-weight: $fw-semibold;
               color: $c1-500;
+              opacity: 1 !important;
+              &:hover {
+                color: $c2-100 !important;
+              }
               i {
                 opacity: 0.8;
                 margin-right: 0.5rem;
@@ -28,7 +46,6 @@
             }
           }
         }
-       
       }
       .item-right {
         .col-6 {
@@ -56,22 +73,22 @@
   .row {
     .features__left {
       .item {
-        h3{
-          @include tablet-md{
+        h3 {
+          @include tablet-md {
             font-size: 3.2rem !important;
           }
-          @include mobile-xs{
+          @include mobile-xs {
             font-size: 3rem !important;
           }
         }
         padding-left: 2.4rem;
         padding-right: 4.8rem;
-        .btn{
-            margin-top: 5rem;
-            padding: 1.5rem 5rem;
+        .btn {
+          margin-top: 5rem;
+          padding: 1.5rem 5rem;
         }
-        @include mobile-xs{
-         padding: 0;
+        @include mobile-xs {
+          padding: 0;
         }
       }
     }
@@ -79,7 +96,6 @@
       padding-top: 5rem;
       .col-lg-6 {
         padding: 1.5rem 1.5rem;
-        
       }
       .item {
         background-color: $cWhite;
@@ -88,7 +104,7 @@
         border-radius: 0.8rem;
         box-shadow: rgba(1, 1, 1, 0.1) 0.0625px 0.0625px 0.3125px 0px;
         -webkit-transition: 0.3s ease;
-        
+
         h4 {
           font-size: 2.2rem;
           line-height: 2.8rem;
@@ -136,7 +152,7 @@
           font-weight: $fw-semibold;
           color: $c1-500;
           text-align: center;
-          border: 0.0625rem solid transparent;
+          border: 0.0625rem solid rgba(225, 225, 225, 0.2);
           padding: 1.2rem 3.5rem;
           display: inline-block;
           background: $cWhite;
@@ -145,7 +161,7 @@
           transform: translateY(-2.5rem);
           &:hover {
             cursor: pointer;
-            color: $c2-100 ;
+            color: $c2-100 !important ;
           }
         }
         p {
@@ -161,6 +177,10 @@
         border-radius: 0.8rem;
         text-align: center;
         display: block;
+        &:hover {
+          cursor: pointer;
+          color: $c2-100 !important;
+        }
       }
     }
   }
@@ -269,13 +289,13 @@
           margin-bottom: 2rem;
           position: relative;
           .title {
-            h6 {
+            h3 {
               font-size: 1.8rem;
               color: $c1-500;
               margin-bottom: 1rem;
               font-weight: $fw-regular;
             }
-            span {
+            h4 {
               font-size: 1.8rem;
               color: $c1-500;
               margin-bottom: 1rem;
@@ -452,8 +472,8 @@
 .testimonials {
   background-color: $c3-100;
   text-align: center;
-  .heading{
-    @include tablet-md{
+  .heading {
+    @include tablet-md {
       margin-bottom: 5rem;
     }
   }
@@ -490,10 +510,10 @@
         }
       }
     }
-    @include tablet-md{
+    @include tablet-md {
       padding: 2rem 3rem;
     }
-    @include mobile-sm{
+    @include mobile-sm {
       padding: 0;
     }
   }
@@ -508,9 +528,7 @@
     margin-top: 4.5rem;
     .row {
       .col-lg-4 {
-       
         .item {
-           
           background-color: $cWhite;
           border: 0.0625rem solid transparent;
           box-shadow: 0 2.5rem 9.8rem rgba(0, 0, 0, 0.04);
@@ -531,12 +549,23 @@
               cursor: pointer;
               color: $c2-100;
             }
+            h4 {
+              font-size: 2rem;
+              line-height: 2.8rem;
+            }
+          }
+          .card-1 {
+            padding: 3.27rem;
           }
           .card-bottom {
             padding: 1.5rem;
             display: flex;
             align-items: center;
             .title1 {
+              img {
+                width: 100%;
+                border-radius: 50%;
+              }
               &:hover {
                 cursor: pointer;
               }

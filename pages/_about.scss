@@ -92,6 +92,25 @@
         margin-top: 4rem;
         padding: 0 3rem;
       }
+      .btn {
+        // margin-top: 4rem;
+      }
+      .video-play {
+        display: inline-block;
+        width: 7rem;
+        height: 7rem;
+        font-size: 2.2rem;
+        text-align: center;
+        line-height: 6.5rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        color: transparent;
+        border: 0.3rem solid $c2-100;
+        -webkit-text-stroke-width: 0.3rem;
+        -webkit-text-stroke-color: $c2-100;
+        margin-top: 4rem;
+        margin-left: 3rem;
+      }
     }
     .about__feature {
       margin-top: 10rem;
@@ -387,4 +406,35 @@
       }
     }
   }
+}
+.search {
+  transform: scale(70);
+  .icon-search {
+    opacity: 0;
+    color: $cWhite;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+.dark-mode {
+  // .company{
+  //   background-color: #100f19 ;
+  //   .heading{
+  //     h3{
+  //       color: $cWhite !important;
+  //     }
+  //     h4{
+  //       color: $cWhite !important;
+  //     }
+  //   }
+  // }
+  
+    color: #fff !important;
+
+}
+.background1{
+  background-color: #151421 !important;
+  fill: #151421 !important;
+}
+.background2{
+  background-color: #100f19 !important;
 }
